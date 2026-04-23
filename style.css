@@ -395,11 +395,11 @@ main {
 }
 
 .row-2col-narrow-wide {
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 160px 380px;
 }
 
 .row-3col {
-  grid-template-columns: 160px 1fr 1fr;
+  grid-template-columns: 160px 250px 250px;
 }
 
 /* ─── Project item ──────────────────────── */
@@ -422,6 +422,13 @@ main {
   overflow: hidden;
   width: 100%;
   position: relative;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .phone-thumb      { aspect-ratio: 9 / 16; }
@@ -851,7 +858,11 @@ main {
   .hero-product-col { display: none; }
 
   .row-3col {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 1fr;
+  }
+
+  .row-2col-narrow-wide {
+    grid-template-columns: 160px 1fr;
   }
 
   .footer {
@@ -881,6 +892,7 @@ main {
   .row-2col-narrow-wide,
   .row-3col {
     grid-template-columns: 1fr;
+    max-width: 300px;
   }
 
   .archive-title { font-size: 22px; }
