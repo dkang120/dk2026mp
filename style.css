@@ -191,7 +191,7 @@ main {
 /* ─── Hero Grid ──────────────────────────── */
 .hero-grid {
   display: grid;
-  grid-template-columns: 230px 1fr 1fr 150px;
+  grid-template-columns: 230px 1fr 150px;
   gap: 0 22px;
   padding: 18px 0 0;
   align-items: start;
