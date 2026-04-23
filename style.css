@@ -543,7 +543,68 @@ main {
 
 
 /* ══════════════════════════════════════════
-   SECTION 3 — CONTACT
+   CONTACT PAGE (contact.html)
+══════════════════════════════════════════ */
+.contact-page {
+  padding: calc(var(--nav-h) + 60px) var(--pad-x) 60px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-page-inner {
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 40px;
+  align-items: start;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+
+.contact-page-headline {
+  font-family: var(--font-body);
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.contact-page-sub {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.contact-page-product {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #d8d2c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+}
+
+.contact-socials-row {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .contact-page-inner {
+    grid-template-columns: 1fr;
+  }
+  .contact-page-headline { font-size: 32px; }
+}
+
+
+/* ══════════════════════════════════════════
+   SECTION 3 — CONTACT (inline, legacy)
 ══════════════════════════════════════════ */
 .section-contact {
   padding: 60px var(--pad-x) 72px;
