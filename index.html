@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Kang / 2026 Archive</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=DM+Mono:wght@300;400&family=Syne:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">DANIEL KANG / 2026 ARCHIVE</a>
+
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">HOME</a>
+
+      <!-- Resume → opens in new tab -->
+      <a href="resume.html" class="nav-link" target="_blank" rel="noopener">RESUME</a>
+
+      <!-- More dropdown -->
+      <div class="nav-dropdown" id="moreDropdown">
+        <button class="nav-link dropdown-trigger" id="dropdownBtn" aria-expanded="false">
+          MORE
+        </button>
+        <div class="dropdown-menu" id="dropdownMenu" aria-hidden="true">
+          <a href="#contact" class="dropdown-item" id="contactLink">CONTACT</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="dropdown-item">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="dropdown-item">LINKEDIN</a>
+        </div>
+      </div>
+
+      <!-- Social icons -->
+      <div class="nav-socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.5"/><path d="M12 11v5m0-5c0 0 .5-1 2-1s2 1 2 3v3"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         SECTION 1 — HOME
+    ══════════════════════════════════════ -->
+    <section id="home" class="section-home">
+
+      <!-- Hero Row -->
+      <div class="hero-grid">
+
+        <!-- Col 1: Hero image with overlay -->
+        <div class="hero-image-col">
+          <div class="hero-image-wrap">
+            <div class="hero-image">
+              <!--
+                IMAGES FOLDER:
+                Place your image as images/hero-main.jpg
+                Then replace the div below with:
+                <img src="images/hero-main.jpg" alt="Day in the life" />
+              -->
+              <span class="hero-process-tag">THE PROCESS</span>
+              <div class="hero-overlay-text">
+                <h1>day in<br />the life</h1>
+                <span class="hero-sub-tag">my 9-5!</span>
+              </div>
+            </div>
+            <p class="hero-image-caption">PM day in... / 31422</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Mono tagline -->
+        <div class="hero-text-col">
+          <p class="hero-mono">content<br />for<br />the<br />click</p>
+        </div>
+
+        <!-- Col 3: CTA -->
+        <div class="hero-cta-col">
+          <h2 class="cta-headline">LET'S CREATE</h2>
+          <p class="cta-sub">HAVE A PROJECT IN MIND?<br />REACH OUT DIRECTLY.</p>
+          <a href="mailto:kangd4u@gmail.com" class="cta-email">kangd4u@gmail.com</a>
+        </div>
+
+        <!-- Col 4: Product card -->
+        <div class="hero-product-col">
+          <div class="hero-product">
+            <!--
+              Place your product card image as images/product-card.png
+              Then replace with: <img src="images/product-card.png" alt="New product launching soon" />
+            -->
+            <div class="product-badge">
+              <p class="product-badge-label">NEW PRODUCT</p>
+              <p class="product-badge-main">LAUNCHING<br />SOON</p>
+              <p class="product-badge-tag">STAY TUNED</p>
+            </div>
+          </div>
+          <p class="hero-image-caption" style="text-align:right;">kdp template</p>
+        </div>
+
+      </div><!-- /hero-grid -->
+
+      <!-- Archive Title -->
+      <div class="archive-title">DANIEL KANG / 2026 ARCHIVE</div>
+
+    </section><!-- /section-home -->
+
+
+    <!-- ══════════════════════════════════════
+         SECTION 2 — PORTFOLIO
+    ══════════════════════════════════════ -->
+    <section id="portfolio" class="section-portfolio">
+
+      <!-- Row 1: jo malone + wellness gym -->
+      <div class="project-row row-2col-narrow-wide">
+
+        <div class="project-item">
+          <div class="project-thumb phone-thumb">
+            <!--
+              images/jo-malone.jpg
+              <img src="images/jo-malone.jpg" alt="Jo Malone promo" />
+            -->
+            <div class="thumb-placeholder dark">
+              <span class="thumb-brand">Jo Malone<br />London</span>
+            </div>
+          </div>
+          <span class="project-label">jo malone promo / 11422</span>
+        </div>
+
+        <div class="project-item">
+          <div class="project-thumb mood-board-thumb">
+            <!--
+              Replace with: <img src="images/wellness-gym.jpg" alt="Wellness gym" />
+            -->
+            <div class="mood-grid">
+              <div class="mood-cell mc-1"></div>
+              <div class="mood-cell mc-2"></div>
+              <div class="mood-cell mc-3"></div>
+              <div class="mood-cell mc-4"></div>
+              <div class="mood-cell mc-5"><span>WELLNESS</span></div>
+              <div class="mood-cell mc-6"></div>
+              <div class="mood-cell mc-7"></div>
+              <div class="mood-cell mc-8"></div>
+              <div class="mood-cell mc-9"></div>
+            </div>
+          </div>
+          <span class="project-label">wellness gym / 21417</span>
+        </div>
+
+      </div><!-- /row-1 -->
+
+      <!-- Row 2: LACAFE + matchai + glossier -->
+      <div class="project-row row-3col">
+
+        <div class="project-item">
+          <div class="project-thumb phone-thumb">
+            <div class="thumb-placeholder cream">
+              <p class="cafe-name">LACAFE</p>
+              <p class="cafe-sub">neighborhood café in dtla, ca<br />weekday 9 to 5 • weekend 10 to 5</p>
+            </div>
+          </div>
+          <span class="project-label">LACAFE / 13421</span>
+        </div>
+
+        <div class="project-item">
+          <div class="project-thumb portrait-thumb">
+            <!--
+              images/matchai.jpg
+              <img src="images/matchai.jpg" alt="Matchai" />
+            -->
+            <div class="thumb-placeholder mid"></div>
+          </div>
+          <span class="project-label">matchai / 22417</span>
+        </div>
+
+        <div class="project-item">
+          <div class="project-thumb portrait-thumb glossier-thumb">
+            <!--
+              images/glossier.jpg
+              <img src="images/glossier.jpg" alt="Glossier promo" />
+            -->
+            <div class="thumb-placeholder pink">
+              <span class="glossier-wordmark">Gloss.</span>
+            </div>
+          </div>
+          <span class="project-label">Glossier, promo / 12422</span>
+        </div>
+
+      </div><!-- /row-2 -->
+
+      <!-- Row 3: home decor + studio -->
+      <div class="project-row row-2col-narrow-wide">
+
+        <div class="project-item">
+          <div class="project-thumb phone-thumb">
+            <!--
+              images/home-decor.jpg
+              <img src="images/home-decor.jpg" alt="Home decor" />
+            -->
+            <div class="thumb-placeholder sage">
+              <span class="home-icon">🏠</span>
+              <p class="home-label">SPRING SEASON<br />STARTS IN YOUR HOME</p>
+            </div>
+          </div>
+          <span class="project-label">home decor / 13421</span>
+        </div>
+
+        <div class="project-item">
+          <div class="project-thumb wide-thumb">
+            <!--
+              images/studio.jpg
+              <img src="images/studio.jpg" alt="Studio" />
+            -->
+            <div class="thumb-placeholder dark studio-thumb-inner">
+              <p class="studio-label">STUDIO</p>
+            </div>
+          </div>
+          <span class="project-label">studio / 14421</span>
+        </div>
+
+      </div><!-- /row-3 -->
+
+    </section><!-- /section-portfolio -->
+
+
+    <!-- ══════════════════════════════════════
+         SECTION 3 — CONTACT
+         (Scrolls to when user clicks MORE → CONTACT)
+    ══════════════════════════════════════ -->
+    <section id="contact" class="section-contact">
+      <div class="contact-inner">
+        <p class="contact-eyebrow">GET IN TOUCH</p>
+        <h2 class="contact-headline">LET'S CREATE</h2>
+        <p class="contact-sub">HAVE A PROJECT IN MIND?<br />REACH OUT DIRECTLY.</p>
+        <a href="mailto:kangd4u@gmail.com" class="contact-email">kangd4u@gmail.com</a>
+
+        <div class="contact-socials">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="contact-social-link">INSTAGRAM</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="contact-social-link">LINKEDIN</a>
+        </div>
+      </div>
+    </section><!-- /section-contact -->
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="footer-social-link">INSTAGRAM</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="footer-social-link">LINKEDIN</a>
+    </div>
+    <div class="footer-note">
+      <p>Note: The projects featured here are conceptual case studies created for educational and portfolio purposes. They do not represent official work or endorsements by the brands mentioned.</p>
+    </div>
+    <div class="footer-credit">
+      <p>daniel kang<br />@2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
