@@ -368,17 +368,17 @@ main {
 /* ─── Row layouts ──────────────────────── */
 .project-row {
   display: grid;
-  gap: 20px;
-  margin-bottom: 26px;
+  gap: 16px;
+  margin-bottom: 20px;
   align-items: start;
 }
 
 .row-2col-narrow-wide {
-  grid-template-columns: 160px 380px;
+  grid-template-columns: 1fr 2fr;
 }
 
 .row-3col {
-  grid-template-columns: 160px 250px 250px;
+  grid-template-columns: 1fr 1.6fr 1.4fr;
 }
 
 /* ─── Project item ──────────────────────── */
@@ -413,11 +413,21 @@ main {
 .phone-thumb      { aspect-ratio: 9 / 16; }
 .portrait-thumb   { aspect-ratio: 2 / 3; }
 .mood-board-thumb { aspect-ratio: 1 / 1; background: #ede8dd; }
-.wide-thumb       { aspect-ratio: 4 / 3; }
-.glossier-thumb   {}
+.wide-thumb       { aspect-ratio: 2 / 3; } /* studio — tall to show full page */
+.glossier-thumb   { aspect-ratio: 2 / 3; }
+
+/* Jo Malone dark device-frame card */
+.jo-malone-thumb {
+  background: #111;
+  padding: 14px 10px;
+  aspect-ratio: 9 / 16;
+}
+.jo-malone-thumb img {
+  object-fit: contain;
+  object-position: center top;
+}
 
 /* Per-image crop anchors */
-.jo-malone-thumb img { object-position: center top; }
 .glossier-thumb img  { object-position: center bottom; }
 
 /* Placeholders (remove when adding real images) */
@@ -936,11 +946,11 @@ main {
   .hero-product-col { display: none; }
 
   .row-3col {
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 1fr 1.4fr;
   }
 
   .row-2col-narrow-wide {
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 1fr 1.6fr;
   }
 
   .footer {
