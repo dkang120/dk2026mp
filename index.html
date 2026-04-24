@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel Kang / 2026 Archive</title>
+  <title>Daniel Kang — Social + Email Marketing</title>
+  <meta name="description" content="Daniel Kang — freelance social media management & email marketing for DTC brands in beauty, fashion, and CPG." />
+
+  <!-- Open Graph / LinkedIn / iMessage preview -->
+  <meta property="og:title" content="Daniel Kang — Social + Email Marketing" />
+  <meta property="og:description" content="Freelance social + email marketing for DTC brands. Currently accepting projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dkang120.github.io/dk2026mp/" />
+  <meta property="og:image" content="https://dkang120.github.io/dk2026mp/images/hero-main.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon (inline SVG, no external file needed) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f4efe5'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-style='italic' font-size='62' font-weight='300' text-anchor='middle' fill='%23111'%3Edk%3C/text%3E%3C/svg%3E" />
+
   <link rel="stylesheet" href="style.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=DM+Mono:wght@300;400&family=Syne:wght@400;500;600;700&display=swap"
@@ -13,10 +26,28 @@
 <body>
 
   <!-- ══════════════════════════════════════
+       PAGE LOAD INTRO
+  ══════════════════════════════════════ -->
+  <div class="intro-curtain" id="introCurtain">
+    <div class="intro-mark">
+      <span class="intro-mark-line">DANIEL KANG</span>
+      <span class="intro-mark-sub">2026 ARCHIVE</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-pill" id="cursorPill">VIEW</div>
+
+  <!-- ══════════════════════════════════════
        NAV
   ══════════════════════════════════════ -->
   <nav class="nav" id="nav">
     <a href="index.html" class="nav-logo">DANIEL KANG / 2026 ARCHIVE</a>
+
+    <span class="nav-status">
+      <span class="status-dot"></span>
+      AVAILABLE FOR PROJECTS — APR 2026
+    </span>
 
     <div class="nav-links">
       <a href="index.html" class="nav-link active">HOME</a>
@@ -82,6 +113,71 @@
 
 
     <!-- ══════════════════════════════════════
+         SECTION — ABOUT / SERVICES
+    ══════════════════════════════════════ -->
+    <section class="section-about">
+      <div class="about-grid">
+
+        <div class="about-intro">
+          <p class="about-eyebrow">— ABOUT</p>
+          <h2 class="about-headline">
+            <em>social</em> + <em>email</em> marketing for the brands you actually buy from.
+          </h2>
+          <p class="about-body">
+            I help DTC brands in beauty, fashion, and CPG turn scrolls into clicks — and clicks into customers. Hybrid social + lifecycle work, designed to convert.
+          </p>
+        </div>
+
+        <div class="services-list">
+          <div class="service-item">
+            <span class="service-num">01</span>
+            <div>
+              <h3 class="service-title">Social Media Management</h3>
+              <p class="service-desc">Full-stack content, calendar, posting & community across Instagram, TikTok, LinkedIn.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <span class="service-num">02</span>
+            <div>
+              <h3 class="service-title">Email & Lifecycle</h3>
+              <p class="service-desc">Klaviyo flows, campaign design, segmentation. Built to recover carts and lift LTV.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <span class="service-num">03</span>
+            <div>
+              <h3 class="service-title">Strategy & Web</h3>
+              <p class="service-desc">Brand identity, content strategy, and conversion-focused web design when you need it.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         SECTION — CLIENTS
+    ══════════════════════════════════════ -->
+    <section class="section-clients">
+      <p class="clients-label">— TRUSTED BY</p>
+      <div class="clients-marquee">
+        <span class="client-name">TMU BUSINESS NETWORK</span>
+        <span class="client-dot">●</span>
+        <span class="client-name">JC IN ME</span>
+        <span class="client-dot">●</span>
+        <span class="client-name">HK ANIMAL HOSPITAL</span>
+        <span class="client-dot">●</span>
+        <span class="client-name">TMU BUSINESS NETWORK</span>
+        <span class="client-dot">●</span>
+        <span class="client-name">JC IN ME</span>
+        <span class="client-dot">●</span>
+        <span class="client-name">HK ANIMAL HOSPITAL</span>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
          SECTION 2 — PORTFOLIO
     ══════════════════════════════════════ -->
     <section id="portfolio" class="section-portfolio">
@@ -92,6 +188,11 @@
         <div class="project-item">
             <div class="project-thumb phone-thumb jo-malone-thumb">
             <img src="images/jo-malone.jpg" alt="Jo Malone promo" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">JO MALONE</span>
+              <span class="overlay-meta">Email Campaign · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">jo malone promo / 11422</span>
         </div>
@@ -99,6 +200,11 @@
         <div class="project-item">
           <div class="project-thumb mood-board-thumb">
             <img src="images/wellness-gym.jpg" alt="Wellness gym" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">WELLNESS GYM</span>
+              <span class="overlay-meta">Brand Mood Board · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">wellness gym / 21417</span>
         </div>
@@ -111,28 +217,35 @@
         <div class="project-item">
           <div class="project-thumb phone-thumb">
             <img src="images/lacafe.jpg" alt="LACAFE" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">LACAFE</span>
+              <span class="overlay-meta">Email Campaign · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">LACAFE / 13421</span>
         </div>
 
         <div class="project-item">
           <div class="project-thumb portrait-thumb">
-            <!--
-              images/matchai.jpg
-              <img src="images/matchai.jpg" alt="Matchai" loading="lazy" />
-            -->
             <img src="images/matchai.jpg" alt="Matchai" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">MATCHAI</span>
+              <span class="overlay-meta">Social Mood Board · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">matchai / 22417</span>
         </div>
 
         <div class="project-item">
           <div class="project-thumb portrait-thumb glossier-thumb">
-            <!--
-              images/glossier.jpg
-              <img src="images/glossier.jpg" alt="Glossier promo" loading="lazy" />
-            -->
             <img src="images/glossier.jpg" alt="Glossier promo" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">GLOSSIER</span>
+              <span class="overlay-meta">Email Campaign · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">Glossier, promo / 12422</span>
         </div>
@@ -144,22 +257,24 @@
 
         <div class="project-item">
           <div class="project-thumb phone-thumb">
-            <!--
-              images/home-decor.jpg
-              <img src="images/home-decor.jpg" alt="Home decor" loading="lazy" />
-            -->
             <img src="images/home-decor.jpg" alt="Home decor" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">HOME DECOR</span>
+              <span class="overlay-meta">Email Campaign · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">home decor / 13421</span>
         </div>
 
         <div class="project-item">
           <div class="project-thumb wide-thumb">
-            <!--
-              images/studio.jpg
-              <img src="images/studio.jpg" alt="Studio" loading="lazy" />
-            -->
             <img src="images/studio.jpg" alt="Studio" loading="lazy" />
+            <div class="project-overlay">
+              <span class="overlay-client">STUDIO</span>
+              <span class="overlay-meta">Web Design · 2026</span>
+              <span class="overlay-tag">CONCEPTUAL</span>
+            </div>
           </div>
           <span class="project-label">studio / 14421</span>
         </div>
@@ -188,5 +303,40 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+    // ─── Intro curtain ───────────────────
+    window.addEventListener('load', () => {
+      const curtain = document.getElementById('introCurtain');
+      if (!curtain) return;
+      // Only show curtain on first visit per session
+      if (sessionStorage.getItem('introShown')) {
+        curtain.style.display = 'none';
+        return;
+      }
+      setTimeout(() => curtain.classList.add('intro-lift'), 1100);
+      setTimeout(() => {
+        curtain.style.display = 'none';
+        sessionStorage.setItem('introShown', '1');
+      }, 1900);
+    });
+
+    // ─── Custom cursor pill on project hover ───
+    (function() {
+      const pill = document.getElementById('cursorPill');
+      if (!pill) return;
+      const thumbs = document.querySelectorAll('.project-thumb');
+
+      document.addEventListener('mousemove', (e) => {
+        pill.style.left = e.clientX + 'px';
+        pill.style.top  = e.clientY + 'px';
+      });
+
+      thumbs.forEach(t => {
+        t.addEventListener('mouseenter', () => pill.classList.add('cursor-active'));
+        t.addEventListener('mouseleave', () => pill.classList.remove('cursor-active'));
+      });
+    })();
+  </script>
 </body>
 </html>
